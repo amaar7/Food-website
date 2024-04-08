@@ -13,10 +13,10 @@ const Navbar = () => {
 
       <h1 className='text-xl md:text-3xl font-bold primary-color ml-4'>quickDeli</h1>
       <div className='hidden sm:flex gap-3 md:gap-6'>
-        <button className='rounded-lg before:ease relative h-8 w-20 overflow-hidden border border-orange-500 bg-primary-color text-white shadow-2xl'>
+        <button class="rounded-lg before:ease relative h-8 w-20 overflow-hidden border border-orange-500 bg-primary-color text-white shadow-2xl">
           Log In
         </button>
-        <button className='rounded-lg before:ease relative h-8 w-20 overflow-hidden border border-orange-500 bg-primary-color text-white shadow-2xl'>
+        <button class="rounded-lg before:ease relative h-8 w-20 overflow-hidden border border-orange-500 bg-primary-color text-white shadow-2xl">
           Sign Up
         </button>
       </div>
@@ -31,15 +31,16 @@ const Navbar = () => {
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
 
-      <div className={nav ? 'z-10 fixed h-full top-[80px] w-full ease-in-out duration-500' : 'fixed top-[-100%]'}>
-        <ul className={nav ? 'p-8 text-2xl w-full bg-white rounded-lg text-black' : 'p-8 text-2xl w-full bg-primary-color rounded-lg text-white'}>
+      <div className={nav ? 'z-10 fixed h-full top-[80px] w-full ease-in-out duration-500' 
+                                  : 'fixed top-[-100%]'}>
+        <ul className='p-8 text-2xl w-full bg-primary-color rounded-lg text-white'>
           <li className='p-5'><a href='#food'>Food</a></li>
           <li className='p-5'><a href='#download'>Download</a></li>
           <div className='flex gap-4'>
-            <button className='rounded-lg h-12 w-28 bg-orange-900 shadow-2xl'>
+            <button class="rounded-lg h-12 w-28 bg-orange-900 shadow-2xl">
               <span relative="z-10">Log In</span>
             </button>
-            <button className='rounded-lg h-12 w-28 bg-orange-900  shadow-2xl'>
+            <button class="rounded-lg h-12 w-28 bg-orange-900  shadow-2xl">
               <span relative="z-10">Sign Up</span>
             </button>
           </div>
