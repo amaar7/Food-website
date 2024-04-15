@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu, AiOutlineShoppingCart } from 'react-icons/ai';
 
-const Navbar = () => {
+const Navbar = (toggleCartVisibility) => {
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -20,7 +20,9 @@ const Navbar = () => {
           Sign Up
         </button>
       </div>
-      <a className='p-5 my-auto text-2xl text-orange-700'><AiOutlineShoppingCart /></a>
+      <button onClick={toggleCartVisibility} className='p-5 my-auto text-2xl text-orange-700'>
+        <AiOutlineShoppingCart />
+        </button>
       <ul className='hidden md:flex'>
         <li className='p-5'><a href='#food'>Food</a></li>
         <li className='p-5'><a href='#download'>Download</a></li>
