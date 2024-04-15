@@ -24,7 +24,7 @@ const Hero = () => {
 
       </div>
 
-
+ 
       <div className='rounded-xl bg-food-image bg-cover bg-center h-[300px] sm:h-full'>
       </div>
 
